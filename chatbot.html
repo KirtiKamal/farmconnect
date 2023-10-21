@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" id="cards">
+        <div id="header">
+            <h1>Farmer 
+                
+            </h1>
+        </div>
+        <div id="message-section">
+            <div class="message" id="bot"><span id="bot-response">Hey there!! How are you?</span></div>
+        </div>
+        <div id="input-section">
+            <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus" />
+            <button class="send" onclick="sendMessage()">
+                <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+            </button>
+        </div>
+    </div>
+    <div id="chat-bot">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/1*C_LFPy6TagD1SEN5SwmVRQ.jpeg" alt="">
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var chat=document.getElementById("chat-bot");
+        var content=document.getElementById("cards");
+
+        chat.addEventListener("click",()=>{
+            content.classList.toggle("show");
+        })
+    </script>
+</body>
+</html>
